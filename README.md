@@ -1,55 +1,63 @@
 # Customer-Segmentation-and-Price-Optimization-Project
-Project Overview
+## Project Overview
 This project aims to combine customer segmentation and dynamic pricing optimization to help businesses identify distinct customer groups and adjust pricing strategies to maximize profits. The project consists of two main parts:
 
 Customer Segmentation: Using clustering techniques to segment customers based on various attributes such as Customer Lifetime Value (CLV), Price Sensitivity, and Churn Risk.
 Price Optimization: Developing a pricing model to determine optimal price points and discounts that will maximize sales and profit.
-Table of Contents
-Project Objectives
-Dataset
-Project Workflow
-Customer Segmentation
-Feature Selection
-Clustering Algorithm
-Segmentation Visualization
-Price Optimization
-Feature Selection
-Model Training
-Price and Discount Optimization
-Results
-Optimal Pricing Strategy
+
+# Table of Contents
+- Project Objectives
+- Dataset
+- Project Workflow
+- Customer Segmentation
+- Feature Selection
+- Clustering Algorithm
+- Segmentation Visualization
+ - Price Optimization
+- Feature Selection
+- Model Training
+- Price and Discount Optimization
+- Results
+- Optimal Pricing Strategy
 Usage
 Future Work
 Dependencies
-Project Objectives
+
+# Project Objectives
 The main objectives of the project are:
 
-To segment customers based on key behavioral and demographic attributes.
-To predict sales volumes based on pricing strategies (base price, discount) and maximize profit using machine learning.
-To identify optimal price points for different customer segments to enhance business performance.
+- To segment customers based on key behavioral and demographic attributes.
+- To predict sales volumes based on pricing strategies (base price, discount) and maximize profit using machine learning.
+- To identify optimal price points for different customer segments to enhance business performance.
 Dataset
+
 The dataset used in this project includes various features related to customer transactions, demographics, and purchasing behavior. Key features include:
 
-CLV (Customer Lifetime Value)
-Average Order Value
-Purchase Frequency
-Transaction Frequency
-Churn Risk
-Price Sensitivity
-Age
-Income
+- CLV (Customer Lifetime Value)
+- Average Order Value
+- Purchase Frequency
+- Transaction Frequency
+- Churn Risk
+- Price Sensitivity
+- Age
+- Income
+
 The dataset is preprocessed, and certain columns have been encoded or transformed to make them suitable for modeling.
 
 Project Workflow
 The project is divided into two main phases:
 
 Phase 1: Customer Segmentation
+
 Goal: Group customers into meaningful segments based on their purchasing behavior and demographic data.
 Approach: We used clustering techniques (KMeans) for segmentation based on selected customer attributes like CLV, Price Sensitivity, and Churn Risk.
+
 Phase 2: Price Optimization
+
 Goal: Predict how price changes (base price and discount) impact sales volumes and find the optimal price and discount combination that maximizes profit.
 Approach: A machine learning model (Random Forest Regressor) was used to predict sales volumes based on pricing strategies and customer data.
-Customer Segmentation
+
+# Customer Segmentation
 1. Feature Selection
 We selected the following features for the segmentation process:
 
@@ -62,7 +70,8 @@ We used KMeans Clustering to segment customers. The number of clusters was deter
 
 python
 Copy code
-from sklearn.cluster import KMeans
+from sklearn.cluster import KMeans 
+
 # Train KMeans model with the optimal number of clusters
 kmeans = KMeans(n_clusters=5, random_state=42)
 kmeans.fit(features)
@@ -77,7 +86,8 @@ import plotly.express as px
 fig = px.scatter(df_encoded, x='CLV', y='Price_Sensitivity', color='Cluster_Labels', 
                  hover_data=['Avg_Order_Value', 'Churn_Risk', 'Age'])
 fig.show()
-Price Optimization
+
+# Price Optimization
 1. Feature Selection
 The following features were used to predict the sales volume:
 
