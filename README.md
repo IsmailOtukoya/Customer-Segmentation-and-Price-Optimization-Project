@@ -121,3 +121,44 @@ Optimal Discount: 10%
 Maximum Profit: $246.48
 Predicted Sales Volume: 12 units
 These results indicate that the business can achieve maximum profitability at a base price of $100.00 with a 10% discount, selling approximately 12 units.
+
+
+# Running the Notebook
+This project was developed using Google Colab, and you can easily run it by following these steps:
+
+1. Open the Project in Google Colab
+To get started, open the project directly in Google Colab:
+
+Go to Google Colab.
+Click on the "GitHub" tab.
+Enter the repository URL in the search bar:
+
+Copy code
+https://github.com/IsmailOtukoya/Customer-Segmentation-and-Price-Optimization-Project
+
+Select the Customer_Segmentation_and_Price_Optimization.ipynb file.
+
+2. Install Required Libraries in Colab
+Once the notebook is open in Colab, you may need to install certain libraries. If a cell with !pip install commands isn’t provided in the notebook, add a cell at the top of the notebook and install any necessary libraries:
+
+3. Run the Notebook
+After installing the necessary libraries, run each cell sequentially:
+
+Select a cell and press Shift + Enter to execute it.
+Make sure to run all cells in order to complete the analysis.
+
+4. Download or Save Your Results
+You can download the results or any generated files from Colab by following these steps:
+
+Go to the "Files" pane on the left sidebar.
+Locate the files or datasets you want to download.
+Right-click on the file and choose "Download" to save it to your local machine.
+
+5. Optional: Save a Copy to Your Own Google Drive
+To save the notebook to your own Google Drive:
+
+Go to File > Save a copy in Drive.
+This will save a copy of the notebook to your Google Drive for future use.
+Additional Notes
+Since this project was developed in Colab, there is no requirements.txt file.
+You can run the notebook in any Jupyter environment (local machine or cloud), but make sure the necessary libraries are installed in your environment
